@@ -1,0 +1,96 @@
+.empty-node::after {
+  content: attr(data-placeholder);
+  color: #9ca3af;
+
+  position: absolute;
+  pointer-events: none;
+  top: 15px;
+  margin-left: 1px;
+}
+
+.ProseMirror {
+  position: relative;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  outline: none;
+  cursor: text;
+  line-height: 1.2;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  appearance: textfield;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.ProseMirror-icon {
+  display: inline-block;
+  line-height: 0.8;
+  vertical-align: -2px;
+  color: #666;
+  cursor: pointer;
+  margin: 0 3px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: background 50ms ease-in-out;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ProseMirror-menu-disabled.ProseMirror-icon {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+.ProseMirror-icon svg {
+  fill: currentColor;
+  height: 1em;
+}
+
+.ProseMirror-icon span {
+  vertical-align: text-top;
+}
+
+.remirror-editor-wrapper .remirror-editor {
+  min-height: 150px;
+}
+
+.issue-comments-section .remirror-editor-wrapper .remirror-editor,
+.page-block-section .remirror-editor-wrapper .remirror-editor {
+  min-height: 50px;
+}
+
+.remirror-section .remirror-editor-wrapper .remirror-editor {
+  min-height: 0 !important;
+}
+
+.remirror-editor-wrapper {
+  padding-top: 8px;
+}
+
+.MuiButtonBase-root {
+  border: none !important;
+  border-radius: 0.25rem !important;
+  padding: 0.25rem !important;
+}
+
+.MuiButtonBase-root svg {
+  fill: rgb(var(--color-text-base)) !important;
+}
+
+.MuiButtonBase-root.Mui-selected,
+.MuiButtonBase-root:hover {
+  background-color: rgb(var(--color-bg-base)) !important;
+}
